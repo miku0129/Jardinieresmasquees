@@ -1,0 +1,77 @@
+$nav-height: 15%; // ナビゲーションの初期の高さ
+$nav-shrink-height: 10%; // 縮小後のナビゲーションの高さ
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $nav-height;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  transition: height 0.3s ease-in-out; // 高さのアニメーションを設定
+  will-change: height; // アニメーションの最適化
+
+  .logo {
+    font-size: 28px;
+    color: white;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: white;
+
+    .logo {
+      color: black;
+    }
+
+    .menu {
+      li {
+        a {
+          color: black;
+          transition: color 0.3s;
+
+          &:hover {
+            color: green;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &.shrink {
+    height: $nav-shrink-height;
+    padding: 10px 20px;
+    background-color: white;
+
+    .logo {
+      color: black;
+    }
+
+    .menu {
+      li {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

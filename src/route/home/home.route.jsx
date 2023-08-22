@@ -1,8 +1,7 @@
-
-import "./home.styles.scss";
+import Main from "../../component/main/main.component";
 
 const Home = () => {
-  return <div>This is home</div>;
+  return <Main />;
 };
 
 export default Home;

@@ -1,0 +1,23 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgb(235, 130, 23, 0.8),
+      rgb(220, 241, 231, 0)
+    ),
+    url("https://i.ibb.co/P5YY5z7/IMG-9034.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  max-height: 600px;
+
+
+}
+
+.contents {
+  background-color: lightgreen;
+  margin-top: 600px;
+}
