@@ -18,8 +18,6 @@ $nav-shrink-height: 10%; // 縮小後のナビゲーションの高さ
   will-change: height; // アニメーションの最適化
 
   .logo {
-    // font-size: 28px;
-    // color: white;
     position: absolute;
     top: 5px;
     min-width: 80px;
@@ -32,7 +30,6 @@ $nav-shrink-height: 10%; // 縮小後のナビゲーションの高さ
 
     transition: all 0.3s ease-in-out; // 高さのアニメーションを設定
     will-change: height; // アニメーションの最適化
-  
   }
 
   .menu {
@@ -50,7 +47,6 @@ $nav-shrink-height: 10%; // 縮小後のナビゲーションの高さ
 
   &:hover {
     background-color: white;
-
 
     .menu {
       li {
@@ -74,11 +70,9 @@ $nav-shrink-height: 10%; // 縮小後のナビゲーションの高さ
     border-bottom: solid 1px gray;
 
     .logo {
-      // color: black;
       min-width: 50px;
       max-width: 50px;
       height: 50px;
-  
     }
 
     .menu {
