@@ -15,7 +15,9 @@ const Nav = () => {
 
   return (
     <div class="navigation">
-      <div class="logo">Jardinieres masquées de Tours</div>
+      <div class="logo-container">
+        <div className="logo"></div>
+      </div>
       <ul class="menu">
         <li>
           <a href="#">Home</a>

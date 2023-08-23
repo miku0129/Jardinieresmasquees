@@ -2,7 +2,7 @@ export const ACTIVITY_PHOTO_IMAGES = {
   activity_photo: [
     {
       id: 0,
-      image_url: "https://i.ibb.co/6RvJbbR/IMG-9043.jpg",
+      image_url: "https://i.ibb.co/TkSKX8R/363436690-674200007560785-4359258381712670777-n.jpg",
     },
     {
       id: 1,
@@ -20,5 +20,10 @@ export const ACTIVITY_PHOTO_IMAGES = {
       id: 4,
       image_url: "https://i.ibb.co/yycnfps/IMG-9052.jpg",
     },
+    {
+      id: 5,
+      image_url: "https://i.ibb.co/6RvJbbR/IMG-9043.jpg",
+    },
+
   ],
 };
