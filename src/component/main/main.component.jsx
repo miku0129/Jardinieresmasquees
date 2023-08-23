@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import ImageGallery from "react-image-gallery";
 
-import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
+// import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
+import ContentHeader from "../content-header/content-header";
 import { ACTIVITY_PHOTO_IMAGES } from "../../utils/data.utils/activity-photo-data";
 
-import "./main.styles.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
+import "./main.styles.scss";
 
 const Main = () => {
   const originalImages = ACTIVITY_PHOTO_IMAGES.activity_photo;
@@ -19,24 +20,17 @@ const Main = () => {
     return obj;
   });
 
-  // window.addEventListener("scroll", function () {
-  //   const headerContents = document.querySelector(".header-contents");
-  //   if (window.scrollY > 150 ) {
-  //     headerContents.classList.add("effect-to-headerContents");
-  //   } else if (window.scrollY <= 150 ) {
-  //     headerContents.classList.remove("effect-to-headerContents");
-  //   }})
-
   return (
     <Fragment>
       <div className="main-container">
         <div>
-          <header className="header">
+          <ContentHeader />
+          {/* <header className="header">
             <div className="header-contents">
               <p className="header-contents-subline">Bienvenue sur</p>
               <h2 className="header-contents-mainline">Jardinieres masquées</h2>
             </div>
-          </header>
+          </header> */}
         </div>
         <div className="contents-container">
           <div className="introduction-container">
@@ -53,14 +47,14 @@ const Main = () => {
               <div className="container-inner">
                 <h3>Qui sommes-nous</h3>
                 <p>
-                  Les organisations bénévoles à Tours et dans les quartiers.
+                  Une organisation de bénévoles à Tours et dans les quartiers.
                 </p>
               </div>
               <div className="container-inner">
                 <h3>Que faisons-nous</h3>
                 <p>
                   Nous souhaitons nous réapproprier collectivement certains
-                  espaces à Tours pour cultiver des fruits.
+                  espaces à Tours pour cultiver des arbres fruitiers.
                 </p>
               </div>
             </div>
