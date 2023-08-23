@@ -20,13 +20,13 @@ const Nav = () => {
       </div>
       <ul class="menu">
         <li>
-          <a href="#">Home</a>
+          <a href="#">Accueil</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#">A&nbsp;propos</a>
         </li>
         <li>
-          <a href="#">News</a>
+          <a href="#">Infos</a>
         </li>
         <li>
           <a href="#">Contact</a>

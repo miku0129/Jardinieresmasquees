@@ -1,13 +1,16 @@
 $footer-height: 15%; // 初期の高さ
+$breakpoint-small: 450px;
 
-
-.footer-container{
+.footer-container {
+  display: flex;
+  justify-content: center;
+  height: $footer-height;
+  .footer-sub-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: $footer-height;
-    .footer-sub-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    @media (max-width: $breakpoint-small) {
+      justify-content: flex-start;
     }
+  }
 }

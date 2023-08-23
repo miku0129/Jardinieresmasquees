@@ -74,12 +74,13 @@ const Main = () => {
               showFullscreenButton={false}
               useBrowserFullscreen={false}
               showPlayButton={false}
+              showBullets={true}
             />
           </div>
 
-          <div className="articles-container">
+          {/* <div className="articles-container">
             <ArticlesPreview />
-          </div>
+          </div> */}
 
           <div className="contact-container">
             <div className="logo"></div>
