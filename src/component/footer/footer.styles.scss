@@ -1,0 +1,13 @@
+$footer-height: 15%; // 初期の高さ
+
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    height: $footer-height;
+    .footer-sub-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

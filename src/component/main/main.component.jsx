@@ -19,11 +19,24 @@ const Main = () => {
     return obj;
   });
 
+  // window.addEventListener("scroll", function () {
+  //   const headerContents = document.querySelector(".header-contents");
+  //   if (window.scrollY > 150 ) {
+  //     headerContents.classList.add("effect-to-headerContents");
+  //   } else if (window.scrollY <= 150 ) {
+  //     headerContents.classList.remove("effect-to-headerContents");
+  //   }})
+
   return (
     <Fragment>
       <div className="main-container">
         <div>
-          <header class="header"></header>
+          <header className="header">
+            <div className="header-contents">
+              <p className="header-contents-subline">Bienvenue sur</p>
+              <h2 className="header-contents-mainline">Jardinieres masquées</h2>
+            </div>
+          </header>
         </div>
         <div className="contents-container">
           <div className="introduction-container">
@@ -69,7 +82,7 @@ const Main = () => {
           </div>
 
           <div className="contact-container">
-            <h2>Contactez-nous</h2>
+            <div className="logo"></div>
             <div className="contact-sub-container">
               <p>
                 Si vous êtes intéressé, veuillez nous contacter à cette adresse.
