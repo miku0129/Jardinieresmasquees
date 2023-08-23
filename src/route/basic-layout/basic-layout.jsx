@@ -4,16 +4,16 @@ import { Outlet } from "react-router-dom";
 import Nav from "../../component/nav/nav.component";
 import Footer from "../../component/footer/footer.component";
 
-import "./basic-layout.styles.scss";
+import { BasicLayoutContainer } from "./basic-layout.styles";
 
 const BasicLayout = () => {
   return (
     <Fragment>
-      <div className="basic-layout-container">
+      <BasicLayoutContainer>
         <Nav />
         <Outlet />
         <Footer />
-      </div>
+      </BasicLayoutContainer>
     </Fragment>
   );
 };

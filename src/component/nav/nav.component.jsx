@@ -1,24 +1,23 @@
-import "./nav.styles.scss";
+import { useState } from "react";
+import { Navigation, Logo } from "./nav.styles";
 
 const Nav = () => {
-  let isNavShrunk = false;
-  window.addEventListener("scroll", function () {
-    const navigation = document.querySelector(".navigation");
-    if (window.scrollY > 100 && !isNavShrunk) {
-      navigation.classList.add("shrink");
-      isNavShrunk = true;
-    } else if (window.scrollY <= 100 && isNavShrunk) {
-      navigation.classList.remove("shrink");
-      isNavShrunk = false;
+  const [isNavshrunk, setIsNavShrunk] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100 && !isNavshrunk) {
+      setIsNavShrunk(true);
+    } else if (window.scrollY <= 100 && isNavshrunk) {
+      setIsNavShrunk(false);
     }
   });
 
   return (
-    <div class="navigation">
-      <div class="logo-container">
-        <div className="logo"></div>
+    <Navigation className={`${isNavshrunk ? "shrink" : ""}`}>
+      <div className="logo-container">
+        <Logo className={`${isNavshrunk ? "shrink" : ""}`}></Logo>
       </div>
-      <ul class="menu">
+      <ul className="menu">
         <li>
           <a href="#">Accueil</a>
         </li>
@@ -32,7 +31,7 @@ const Nav = () => {
           <a href="#">Contact</a>
         </li>
       </ul>
-    </div>
+    </Navigation>
   );
 };
 

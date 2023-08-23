@@ -3,8 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import BasicLayout from './route/basic-layout/basic-layout';
 import Home from './route/home/home.route';
 
-import './App.css';
-
 function App() {
   return (
       <Routes>
@@ -13,7 +11,6 @@ function App() {
             index
             element={<Home />}
           />
-          {/* <Route path="tasks" element={<DashboardTasks />} /> */}
         </Route>
       </Routes>
     );

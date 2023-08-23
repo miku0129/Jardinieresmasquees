@@ -1,13 +1,13 @@
-import "./footer.styles.scss";
+import { FooterContainer } from "./footer.styles";
 
 const Footer = () => {
   const groupName = "Jardinieres masquées de Tours";
   return (
-    <div className="footer-container">
+    <FooterContainer>
       <div className="footer-sub-container">
         <div>&#169;{groupName}</div>
       </div>
-    </div>
+    </FooterContainer>
   );
 };
 
