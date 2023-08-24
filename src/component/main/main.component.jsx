@@ -4,6 +4,7 @@ import ImageGallery from "react-image-gallery";
 // import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
 import ContentHeader from "../content-header/content-header.compoment";
 import ContentIntroduction from "../content-introduction/content-introduction.component";
+import ContentContact from "../content-contact/content-contact.component";
 import { ACTIVITY_PHOTO_IMAGES } from "../../utils/data.utils/activity-photo-data";
 
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -46,15 +47,7 @@ const Main = () => {
             <ArticlesPreview />
           </div> */}
 
-          <div className="contact-container">
-            <div className="logo"></div>
-            <div className="contact-sub-container">
-              <p>
-                Si vous êtes intéressé, veuillez nous contacter à cette adresse.
-              </p>
-              <p>jardinieres.masquees@divrotonmail.com</p>
-            </div>
-          </div>
+          <ContentContact />
         </div>
       </div>
     </Fragment>
