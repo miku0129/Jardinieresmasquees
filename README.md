@@ -6,8 +6,8 @@ This repository contains the codebase of a website for "Jardinieresmasquees" - A
 
 ## Features
 
-- **Simple Navigation:** Enjoy an intuitive and user-friendly interface for easy exploration and participation.
-- **Join the community:** Connect with fellow garden lovers and exchange ideas.
+- **Simple Navigation:**  Smooth, user-friendly interface using by react-anchor-navigation.
+- **Appeal to the eye:** Enhance visuals with react-image-gallery. 
 
 ## Demo
 <img src='https://github.com/miku0129/Jardinieresmasquees/assets/58237700/d7ba9734-bf43-405b-9a8d-933d147001c9' width="600px"/>
