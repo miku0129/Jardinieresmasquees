@@ -19,7 +19,7 @@ const ArticleCard = ({ article }) => {
         <img src={src} />
         <p class="blog-description">{text}</p>
         <a href={article_original_resource} class="read-more" target="_blank">
-          Read More
+          Lire plus
         </a>
       </div>
     </div>

@@ -25,7 +25,7 @@ export const ContactContainer = styled.div`
     gap: 50px;
 
     border-bottom: solid 1px gray;
-    padding-bottom: 50px;
+    padding: 0px 20px 50px 20px;
 
     .icons{
       display: flex;
@@ -55,7 +55,6 @@ export const ContactContainer = styled.div`
 
       .contact-sub-container {
         width: 200px;
-        margin-left: 5%;
       }
     }
   }
