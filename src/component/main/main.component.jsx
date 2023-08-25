@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import ImageGallery from "react-image-gallery";
 
-// import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
+import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
 import ContentHeader from "../content-header/content-header.compoment";
 import ContentIntroduction from "../content-introduction/content-introduction.component";
 import ContentContact from "../content-contact/content-contact.component";
+
 import { ACTIVITY_PHOTO_IMAGES } from "../../utils/data.utils/activity-photo-data";
 
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -43,9 +44,9 @@ const Main = () => {
             />
           </div>
 
-          {/* <div className="articles-container">
+          <div>
             <ArticlesPreview />
-          </div> */}
+          </div>
 
           <ContentContact />
         </div>

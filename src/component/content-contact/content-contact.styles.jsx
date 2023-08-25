@@ -27,6 +27,23 @@ export const ContactContainer = styled.div`
     border-bottom: solid 1px gray;
     padding-bottom: 50px;
 
+    .icons{
+      display: flex;
+      gap: 5px;
+      .group-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+      }
+      .facebook-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        opacity: 50%;
+      }
+    }
+
     .contact-sub-container {
       display: flex;
       flex-direction: column;
