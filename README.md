@@ -12,7 +12,7 @@ This repository contains the codebase of a website for "Jardinieresmasquees" - A
 ## Demo
 <img src='https://github.com/miku0129/Jardinieresmasquees/assets/58237700/d7ba9734-bf43-405b-9a8d-933d147001c9' width="600px"/>
 <br /> 
-[link](https://jardinieresmasquees.vercel.app/){:target="_blank"}
+https://jardinieresmasquees.vercel.app/
 
 ## Usage
 
