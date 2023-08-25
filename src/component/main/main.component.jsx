@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import ImageGallery from "react-image-gallery";
+import { AnchorSection } from "react-anchor-navigation";
 
 import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
 import ContentHeader from "../content-header/content-header.compoment";
@@ -26,10 +27,13 @@ const Main = () => {
   return (
     <Fragment>
       <div className="main-container">
-        <div>
-          <ContentHeader />
-        </div>
+        {/* <div> */}
+        <AnchorSection id="accueil" />
+        <ContentHeader />
+        {/* </div> */}
+
         <div className="contents-container">
+          <AnchorSection id="propos" />
           <ContentIntroduction />
 
           <div className="image-gallery-container">
@@ -44,10 +48,12 @@ const Main = () => {
             />
           </div>
 
-          <div>
-            <ArticlesPreview />
-          </div>
+          <AnchorSection id="infos" />
+          {/* <div> */}
+          <ArticlesPreview />
+          {/* </div> */}
 
+          <AnchorSection id="contact" />
           <ContentContact />
         </div>
       </div>

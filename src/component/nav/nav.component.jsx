@@ -1,4 +1,7 @@
 import { useState } from "react";
+
+import { AnchorLink } from "react-anchor-navigation";
+
 import { Navigation, Logo } from "./nav.styles";
 
 const Nav = () => {
@@ -19,16 +22,16 @@ const Nav = () => {
       </div>
       <ul className="menu">
         <li>
-          <a href="#">Accueil</a>
+          <AnchorLink href="#accueil">Accueil</AnchorLink>
         </li>
         <li>
-          <a href="#">A&nbsp;propos</a>
+          <AnchorLink href="#propos">A&nbsp;propos</AnchorLink>
         </li>
         <li>
-          <a href="#">Infos</a>
+          <AnchorLink href="#infos">Infos</AnchorLink>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <AnchorLink href="#contact">Contact</AnchorLink>
         </li>
       </ul>
     </Navigation>
