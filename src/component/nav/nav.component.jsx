@@ -18,7 +18,9 @@ const Nav = () => {
   return (
     <Navigation className={`${isNavshrunk ? "shrink" : ""}`}>
       <div className="logo-container">
-        <Logo className={`${isNavshrunk ? "shrink" : ""}`}></Logo>
+        <AnchorLink href="#accueil">
+          <Logo className={`${isNavshrunk ? "shrink" : ""}`}></Logo>
+        </AnchorLink>
       </div>
       <ul className="menu">
         <li>
