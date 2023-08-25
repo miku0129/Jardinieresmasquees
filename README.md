@@ -10,9 +10,10 @@ This repository contains the codebase of a website for "Jardinieresmasquees" - A
 - **Appeal to the eye:** Enhance visuals with react-image-gallery. 
 
 ## Demo
-<img src='https://github.com/miku0129/Jardinieresmasquees/assets/58237700/d7ba9734-bf43-405b-9a8d-933d147001c9' width="600px"/>
-<br /> 
-https://jardinieresmasquees.vercel.app/
+
+![jardinieresmasquees_demo](https://github.com/miku0129/Jardinieresmasquees/assets/58237700/507d4345-41fe-415a-8ef6-6cd167e161d6)
+
+Here is the [link](https://jardinieresmasquees.vercel.app/)
 
 ## Usage
 
