@@ -2,12 +2,17 @@
 
 This repository contains the codebase of a website for "Jardinieresmasquees" - A local volunteer group in Tours, France. Owing shared garden and providing local residents opportunities to enjoy gardening. The platform serves information for future garden enthusiasts to share their creative gardening ideas, actions, and inspirations.
 
-<img src="https://i.ibb.co/kGqNLh5/Screenshot-2023-08-20-143312.jpg" alt="group logo" width="200px"/>
+<img src="https://i.ibb.co/kGqNLh5/Screenshot-2023-08-20-143312.jpg" alt="group logo" width="100px"/>
 
 ## Features
 
 - **Simple Navigation:** Enjoy an intuitive and user-friendly interface for easy exploration and participation.
 - **Join the community:** Connect with fellow garden lovers and exchange ideas.
+
+## Demo
+<img src='https://github.com/miku0129/Jardinieresmasquees/assets/58237700/d7ba9734-bf43-405b-9a8d-933d147001c9' width="600px"/>
+<br /> 
+[link](https://jardinieresmasquees.vercel.app/){:target="_blank"}
 
 ## Usage
 
