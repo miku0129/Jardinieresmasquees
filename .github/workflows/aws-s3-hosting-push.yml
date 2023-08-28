@@ -1,11 +1,15 @@
-name: deploy static website to AWS-S3
+name: Deploy static website to AWS-S3
 
 on:
   push:
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci && npm run build
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -20,3 +24,4 @@ jobs:
       - name: Deploy to AWS S3
         run: |
           aws s3 sync . s3://jardinieresmasquees.site --delete
+        working-directory: ./build
