@@ -23,7 +23,7 @@ jobs:
           aws-region: eu-west-3
 
       - name: Deploy to AWS S3
+        run: ls ${{ github.workspace }}
         run: |
           aws s3 sync . s3://jardinieresmasquees.site --delete
-        run: pwd
         working-directory : build
