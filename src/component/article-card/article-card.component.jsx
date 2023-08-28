@@ -16,9 +16,9 @@ const ArticleCard = ({ article }) => {
   return (
     <div>
       <div class="blog-card">
-        <img src={src} />
+        <img src={src} alt={article_summary}/>
         <p class="blog-description">{text}</p>
-        <a href={article_original_resource} class="read-more" target="_blank">
+        <a href={article_original_resource} class="read-more" target="_blank" rel="noreferrer">
           Lire plus
         </a>
       </div>

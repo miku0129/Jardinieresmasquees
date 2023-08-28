@@ -10,7 +10,7 @@ const ContentContact = () => {
           <Logo></Logo>
         </div>
         <div className="facebook-logo">
-          <a href="https://www.facebook.com/jardinieresmasquees" target="_blank">
+          <a href="https://www.facebook.com/jardinieresmasquees" target="_blank" rel="noreferrer">
           <FacebookLogo style={{ width: "30px", height: "30px" }} />
 
           </a>
