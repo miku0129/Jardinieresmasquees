@@ -24,4 +24,5 @@ jobs:
 
       - name: Deploy to AWS S3
         run: |
-          aws s3 sync ./build s3://jardinieresmasquees.site --delete
+          aws s3 sync . s3://jardinieresmasquees.site --delete
+        workind-directory : build
