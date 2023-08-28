@@ -15,13 +15,17 @@ const ArticleCard = ({ article }) => {
 
   return (
     <div>
-      <div class="blog-card">
-        <img src={src} alt={article_summary}/>
-        <p class="blog-description">{text}</p>
-        <a href={article_original_resource} class="read-more" target="_blank" rel="noreferrer">
-          Lire plus
-        </a>
-      </div>
+      <a
+        href={article_original_resource}
+        class="blog-card-link"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div class="blog-card">
+          <img src={src} alt={article_summary} />
+          <p class="blog-description">{text}</p>
+        </div>
+      </a>
     </div>
   );
 };

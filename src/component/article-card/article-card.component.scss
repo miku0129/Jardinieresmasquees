@@ -1,30 +1,25 @@
-// body {
-//   font-family: Arial, sans-serif;
-//   margin: 0;
-//   padding: 0;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   background-color: #f7f7f7;
-// }
-
+.blog-card-link {
+  text-decoration: none;
+}
 .blog-card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 300px;
   max-height: 50vh;
-  min-height: 50vh;
+  max-height: 40vh;
+  min-height: 300px;
   padding: 20px;
   text-align: center;
 
-  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .blog-card img {
-//   max-width: 100%;
-max-width: 85%;
+  //   max-width: 100%;
+  max-width: 85%;
   border-radius: 4px;
 }
 
@@ -37,16 +32,4 @@ max-width: 85%;
   font-size: 18px;
   color: #777;
   margin: 5px 0;
-}
-
-.read-more {
-  position: absolute; /* 絶対的な配置 */
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 5px 10px;
-  background-color: gray;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
 }
