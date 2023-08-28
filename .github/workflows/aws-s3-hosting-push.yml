@@ -3,13 +3,13 @@ name: Build and deploy static website to AWS-S3
 on:
   push:
 jobs:
-  build:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - run: npm ci && npm run build
+  # build:
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - uses: actions/checkout@v2
+  #       - run: npm ci && npm run build
   deploy:
-    needs: [build]
+    # needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,11 +21,13 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-3
+      
+      - name: Build
+        run: npm ci && npm run build
 
       - name: Check files
         run: ls ${{ github.workspace }}
 
       - name: Deploy to AWS S3
         run: |
-          aws s3 sync . s3://jardinieresmasquees.site --delete
-        working-directory : build
+          aws s3 sync ./build s3://jardinieresmasquees.site --delete
