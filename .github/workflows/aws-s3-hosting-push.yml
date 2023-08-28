@@ -1,7 +1,9 @@
-name: Build and deploy static website to AWS-S3
+name: Build and deploy to AWS-S3 on merge
 
 on:
   push:
+    branches:
+      - main
 jobs: #jobsを複数に分けず、stepsで build, deployを行うことで build をgitignoreしたまま buildファイルから AWSへデプロイを行うことができた。
   deploy:
     runs-on: ubuntu-latest
