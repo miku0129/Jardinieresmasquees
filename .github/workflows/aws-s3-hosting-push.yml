@@ -2,14 +2,8 @@ name: Build and deploy static website to AWS-S3
 
 on:
   push:
-jobs:
-  # build:
-  #     runs-on: ubuntu-latest
-  #     steps:
-  #       - uses: actions/checkout@v2
-  #       - run: npm ci && npm run build
+jobs: #jobsを複数に分けず、stepsで build, deployを行うことで build をgitignoreしたまま buildファイルから AWSへデプロイを行うことができた。
   deploy:
-    # needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -30,4 +24,4 @@ jobs:
 
       - name: Deploy to AWS S3
         run: |
-          aws s3 sync ./build s3://jardinieresmasquees.site --delete
+          aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }} --delete
