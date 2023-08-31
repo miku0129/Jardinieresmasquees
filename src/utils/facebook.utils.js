@@ -18,8 +18,9 @@ export const initFacebookSdk = () => {
 export const getPostsFromFacebook = async () => {
   try {
     const res = await axios.get(
-      `https://graph.facebook.com/v17.0/106469681046526/feed?access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
+      `https://graph.facebook.com/v17.0/${process.env.REACT_APP_PAGE_ID}/feed?fields=id,permalink_url,created_time,message,full_picture&access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
     );
+    console.log(res.data.data)
     return res.data.data;
   } catch (e) {
     console.log(e);
