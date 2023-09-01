@@ -9,7 +9,7 @@ import "./articles-preview.styles.scss";
 const ArticlesPreview = () => {
   const [facebookPosts, setFacebookPosts] = useState("");
   const memo = useMemo(() => {
-    return facebookPosts;
+    return {};
   }, []);
 
   useEffect(() => {
