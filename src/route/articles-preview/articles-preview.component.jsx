@@ -8,13 +8,10 @@ import "./articles-preview.styles.scss";
 
 const ArticlesPreview = () => {
   const [facebookPosts, setFacebookPosts] = useState("");
-  const memo = useMemo(() => {
-    return {};
-  }, []);
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
-  }, [memo]);
+  }, []);
 
   return (
     <div className="articles-preview-container">
