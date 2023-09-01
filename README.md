@@ -6,7 +6,7 @@ This repository contains the codebase of a website for "Jardinieresmasquees" - A
 
 ## Features
 
-- **Achieved scalable architecture:** Friendly original domain and secure accessing by AWS.
+- **Achieved scalable architecture:** Memorable original domain and secure accessing by AWS.
 - **Assembled with Facebook API:** Obtains posts always up-to-date. 
 - **Simple Navigation:**  Smooth, user-friendly interface using by react-anchor-navigation.
 - **Appeal to the eye:** Enhance visuals with react-image-gallery. 
