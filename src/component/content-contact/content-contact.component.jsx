@@ -18,7 +18,7 @@ const ContentContact = () => {
       </div>
       <div className="contact-sub-container">
         <p>Si vous êtes intéressé, veuillez nous contacter à cette adresse.</p>
-        <p>jardinieres.masquees@divrotonmail.com</p>
+        <p>jardinieres.masquees@protonmail.com</p>
       </div>
     </ContactContainer>
   );
