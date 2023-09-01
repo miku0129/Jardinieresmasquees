@@ -1,0 +1,23 @@
+name: Build on pull-request
+
+on:
+  pull_request:
+    branches:
+      - main
+jobs: 
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up environment variables 
+        run: |
+          touch .env 
+          echo "${{ secrets.APP_ENV }}" >> .env
+          
+      - name: Build
+        run: npm ci && npm run build
+
+      - name: Check files
+        run: ls ${{ github.workspace }}
