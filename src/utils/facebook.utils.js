@@ -20,7 +20,6 @@ export const getPostsFromFacebook = async () => {
     const res = await axios.get(
       `https://graph.facebook.com/v17.0/${process.env.REACT_APP_PAGE_ID}/feed?fields=id,permalink_url,created_time,message,full_picture&access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
     );
-    console.log(res.data.data)
     return res.data.data;
   } catch (e) {
     console.log(e);
