@@ -14,7 +14,7 @@ const ArticlesPreview = () => {
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
-  }, [memo, facebookPosts]);
+  }, [memo]);
 
   return (
     <div className="articles-preview-container">
