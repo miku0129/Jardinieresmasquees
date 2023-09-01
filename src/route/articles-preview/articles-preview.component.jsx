@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState} from "react";
 
 import ArticleCard from "../../component/article-card/article-card.component";
 
@@ -8,13 +8,10 @@ import "./articles-preview.styles.scss";
 
 const ArticlesPreview = () => {
   const [facebookPosts, setFacebookPosts] = useState("");
-  const memo = useMemo(() => {
-    return facebookPosts;
-  }, []);
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
-  }, [memo, facebookPosts]);
+  }, []);
 
   return (
     <div className="articles-preview-container">
