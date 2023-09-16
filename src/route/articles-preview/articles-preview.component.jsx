@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 import ArticleCard from "../../component/article-card/article-card.component";
+import EventCard from "../../component/event-card/event-card.component";
 
 import {
   getPostsFromFacebook,
-  getEventsFromAllPosts,
+  getEventsFromPosts,
 } from "../../utils/facebook.utils";
 
 import "./articles-preview.styles.scss";
@@ -15,13 +16,9 @@ const ArticlesPreview = () => {
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
-    // getEventsFromAllPosts().then(res => setFacebookEvents(res));
+    getEventsFromPosts().then((res) => setFacebookEvents(res));
   }, []);
 
-  //event id を使ってイベント情報を取得する
-  //取得したイベント情報を article-previewに渡す
-  //article-previewでは情報がニュースかイベントかによりコンポーネントを選択、投稿日付順に表示する
-  //article-previewではニュースとイベントを分けるかごっちゃにして表示するか？
   console.log("facebookEvents", facebookEvents);
 
   return (
@@ -33,6 +30,14 @@ const ArticlesPreview = () => {
             .filter((_, idx) => idx < 3)
             .map((article) => {
               return <ArticleCard article={article} key={article.id} />;
+            })}
+      </div>
+      <div className="articles-preview-sub-container">
+        {facebookEvents &&
+          facebookEvents
+            .filter((_, idx) => idx < 3)
+            .map((article) => {
+              return <EventCard article={article} key={article.id} />;
             })}
       </div>
     </div>

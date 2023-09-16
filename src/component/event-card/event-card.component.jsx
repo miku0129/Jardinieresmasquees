@@ -1,15 +1,15 @@
-import "./article-card.component.scss";
+import "./event-card.component.scss";
 
-const ArticleCard = ({ article }) => {
-  const { created_time, message, permalink_url, full_picture } = article;
+const EventCard = ({ article }) => {
+  const { name, cover, place, created_time, permalink_url } = article;
 
-  const text = message.length < 60 ? message : message.slice(0, 60) + "...";
+  const text = name.length < 80 ? name : name.slice(0, 80) + "...";
 
-  const src = full_picture
-    ? full_picture
+  const src = cover
+    ? cover.source
     : "https://i.ibb.co/kGqNLh5/Screenshot-2023-08-20-143312.jpg";
 
-  const published_date = created_time.slice(0, 10);
+  const address = place ? place.name : "";
 
   return (
     <div>
@@ -21,12 +21,13 @@ const ArticleCard = ({ article }) => {
       >
         <div className="blog-card">
           <img src={src} alt={created_time} />
-          <p>{published_date} | Actualités</p>
+          <p>Événement</p>
           <p className="blog-description">{text}</p>
+          {address && <p>Site | {address}</p>}
         </div>
       </a>
     </div>
   );
 };
 
-export default ArticleCard;
+export default EventCard;
