@@ -4,8 +4,9 @@ on:
   pull_request:
     branches:
       - main
-jobs: #jobsを複数に分けず、stepsで build, deployを行うことで build をgitignoreしたまま buildファイルから AWSへデプロイを行うことができた。
+jobs: 
   deploy:
+    name: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
