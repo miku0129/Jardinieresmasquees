@@ -34,6 +34,7 @@ To view or contribute to the "Jardinieresmasquees" project, follow these steps:
 
 2. Explore the codebase, contribute your own garden designs, or engage with the community.
 
+※This project employs a commitlinter; when committing, please make a commit message following  with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## License
 This project is open-source and available under the MIT License. See the LICENSE file for details.
