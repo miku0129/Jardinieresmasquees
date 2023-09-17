@@ -1,6 +1,7 @@
 name: Run commitlint on Commit
 
-on: [commit]
+on:
+  push:
 
 jobs:
   run-commitlint-on-commit:
