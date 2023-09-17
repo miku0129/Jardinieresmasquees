@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "sass": "^1.66.1"
   }
 }
