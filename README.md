@@ -1,4 +1,4 @@
-# Jardinieresmasquees 👨‍🌾
+# Jardinieresmasquees 👨‍🌾🐜
 
 This repository contains the codebase of a website for "Jardinieresmasquees" - A local volunteer group in Tours, France. Owing shared garden and providing local residents opportunities to enjoy gardening. The platform serves information for future garden enthusiasts to share their creative gardening ideas, actions, and inspirations. 🌿🌿🌿
 
