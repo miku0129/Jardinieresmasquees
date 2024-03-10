@@ -1,35 +1,35 @@
-name: Build on pull-request
+# name: Build on pull-request
 
-on:
-  pull_request:
-    branches:
-      - main
-jobs: 
-  deploy:
-    name: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+# on:
+#   pull_request:
+#     branches:
+#       - main
+# jobs: 
+#   deploy:
+#     name: deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Set up AWS CLI
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-3
+#       - name: Set up AWS CLI
+#         uses: aws-actions/configure-aws-credentials@v1
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: eu-west-3
 
-      - name: Set up environment variables
-        run: |
-          touch .env 
-          echo "${{ secrets.APP_ENV }}" >> .env
+#       - name: Set up environment variables
+#         run: |
+#           touch .env 
+#           echo "${{ secrets.APP_ENV }}" >> .env
 
-      - name: Build
-        run: npm ci && npm run build
+#       - name: Build
+#         run: npm ci && npm run build
 
-      - name: Check files
-        run: ls ${{ github.workspace }}
+#       - name: Check files
+#         run: ls ${{ github.workspace }}
 
-      - name: Deploy to AWS S3
-        run: |
-          aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_DEVELOP }} --delete
+#       - name: Deploy to AWS S3
+#         run: |
+#           aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_DEVELOP }} --delete
