@@ -9,7 +9,7 @@ export const Header = styled.div`
         rgb(235, 130, 23, 0.8),
         rgb(220, 241, 231, 0)
       ),
-      url("https://i.ibb.co/P5YY5z7/IMG-9034.jpg");
+      url("https://i.ibb.co/G2cH2Xh/jm11.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
