@@ -26,9 +26,9 @@ const Nav = () => {
         <li>
           <AnchorLink href="#accueil">Accueil</AnchorLink>
         </li>
-        {/* <li>
+        <li>
           <AnchorLink href="#propos">A&nbsp;propos</AnchorLink>
-        </li> */}
+        </li>
         <li>
           <AnchorLink href="#infos">Infos</AnchorLink>
         </li>
