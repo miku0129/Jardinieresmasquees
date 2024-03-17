@@ -1,25 +1,25 @@
 import { useEffect, useState } from "react";
 
 import ArticleCard from "../../component/article-card/article-card.component";
-import EventCard from "../../component/event-card/event-card.component";
+// import EventCard from "../../component/event-card/event-card.component";
 
 import {
   getPostsFromFacebook,
-  getEventsFromPosts,
+  // getEventsFromPosts,
 } from "../../utils/facebook.utils";
 
 import "./articles-preview.styles.scss";
 
 const ArticlesPreview = () => {
   const [facebookPosts, setFacebookPosts] = useState("");
-  const [facebookEvents, setFacebookEvents] = useState("");
+  // const [facebookEvents, setFacebookEvents] = useState("");
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
     // getEventsFromPosts().then((res) => setFacebookEvents(res));
   }, []);
 
-  console.log("facebookEvents", facebookEvents);
+  // console.log("facebookEvents", facebookEvents);
 
   return (
     <div className="articles-preview-container">
