@@ -16,7 +16,7 @@ const ArticlesPreview = () => {
 
   useEffect(() => {
     getPostsFromFacebook().then((res) => setFacebookPosts(res));
-    getEventsFromPosts().then((res) => setFacebookEvents(res));
+    // getEventsFromPosts().then((res) => setFacebookEvents(res));
   }, []);
 
   console.log("facebookEvents", facebookEvents);
@@ -32,14 +32,14 @@ const ArticlesPreview = () => {
               return <ArticleCard article={article} key={article.id} />;
             })}
       </div>
-      <div className="articles-preview-sub-container">
+      {/* <div className="articles-preview-sub-container">
         {facebookEvents &&
           facebookEvents
             .filter((_, idx) => idx < 3)
             .map((article) => {
               return <EventCard article={article} key={article.id} />;
             })}
-      </div>
+      </div> */}
     </div>
   );
 };
