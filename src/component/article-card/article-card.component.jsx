@@ -3,7 +3,11 @@ import "./article-card.component.scss";
 const ArticleCard = ({ article }) => {
   const { created_time, message, permalink_url, full_picture } = article;
 
-  const text = message.length < 60 ? message : message.slice(0, 60) + "...";
+  const text =
+    String(message.slice(0, 6)) === "https:"
+      ? message.slice(0, 30) + "..."
+      : message.slice(0, 60) + "...";
+  console.log(message.slice(0, 20));
 
   const src = full_picture
     ? full_picture
