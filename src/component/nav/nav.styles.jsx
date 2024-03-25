@@ -23,7 +23,7 @@ export const Navigation = styled.div`
   .menu {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
     li {
       a {
@@ -74,7 +74,7 @@ export const Navigation = styled.div`
 
     .menu {
       padding-left: 0;
-      gap: 30px;
+      justify-content: space-around;
       
       li {
         text-align: center;
