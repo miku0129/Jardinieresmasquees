@@ -28,9 +28,8 @@ const Gallery = () => {
 
       setPhotos(photos);
     };
-    getPhotos();
+    // getPhotos();
   }, []);
-  console.log("photos", photos);
 
   return (
     <div className="image-gallery-container">

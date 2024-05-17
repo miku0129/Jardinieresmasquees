@@ -1,6 +1,16 @@
 import "./article-card.component.scss";
 
-const ArticleCard = ({ article }) => {
+type FbArticle = {
+  article: {
+    created_time: string;
+    full_picture: string;
+    id: string;
+    message: string;
+    permalink_url: string;
+  };
+};
+
+const ArticleCard = ({ article }: FbArticle) => {
   const { created_time, message, permalink_url, full_picture } = article;
 
   const text =
