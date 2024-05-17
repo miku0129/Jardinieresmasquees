@@ -4,7 +4,6 @@ import ImageGallery from "react-image-gallery";
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);
-  // const [images, setImages] = useState([]);
 
   const { flickr } = createFlickr(process.env.REACT_APP_FLICKR_API_KEY);
 

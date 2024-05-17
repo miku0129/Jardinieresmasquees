@@ -9,7 +9,7 @@ import ContentContact from "../content-contact/content-contact.component";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./main.styles.scss";
 
-import Gallery from "../gallery/galeries.component";
+import Gallery from "../gallery/gallery.component";
 
 const Main = () => {
   return (
