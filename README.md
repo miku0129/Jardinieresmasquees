@@ -1,15 +1,15 @@
 # Jardinieresmasquees 👨‍🌾
 
-This repository contains the codebase of a website for "Jardinieresmasquees" - A local volunteer group in Tours, France. Owing shared garden and providing local residents opportunities to enjoy gardening. The platform serves information for future garden enthusiasts to share their creative gardening ideas, actions, and inspirations. 🌿🌿🌿
+This repository contains the TypeScript codebase of a website for "Jardinieresmasquees" - A local volunteer group in Tours, France. Owing shared garden and providing local residents opportunities to enjoy gardening. The platform serves information for future garden enthusiasts to share their creative gardening ideas, actions, and inspirations. 🌿🌿🌿
 
 <img src="https://i.ibb.co/kGqNLh5/Screenshot-2023-08-20-143312.jpg" alt="group logo" width="100px"/>
 
 ## Features
 
-- **Achieved scalable architecture:** Memorable original domain and secure accessing by AWS.
-- **Assembled with Facebook API:** Obtains posts always up-to-date. 
+- **Achieved scalable architecture:** by TypeScript + React 
+- **Obtains contents always up-to-date:** Assembled with Facebook API & Flickr API. 
 - **Simple Navigation:**  Smooth, user-friendly interface using by react-anchor-navigation.
-- **Appeal to the eye:** Enhance visuals with react-image-gallery. 
+- **Appeal to the eye:** Enhance visuals with react-image-gallery and styled-component. 
 
 ## Demo
 
