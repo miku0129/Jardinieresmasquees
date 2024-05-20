@@ -29,7 +29,11 @@ const ArticlesPreview = () => {
             .filter((article) => article.hasOwnProperty("message"))
             .filter((_, idx) => idx < 3)
             .map((article) => {
-              return <ArticleCard article={article} key={article.id} />;
+              return (
+                <div key={article.id}>
+                  <ArticleCard article={article} />
+                </div>
+              );
             })}
       </div>
       {/* <div className="articles-preview-sub-container">

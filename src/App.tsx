@@ -7,6 +7,7 @@ import Home from "./route/home/home.route";
 function App() {
   return (
     <AnchorProvider>
+      <div>{/* TypeScriptの型解決のためのdiv */}</div>
       <Routes>
         <Route path="/" element={<BasicLayout />}>
           <Route index element={<Home />} />
