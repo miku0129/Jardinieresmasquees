@@ -23,7 +23,8 @@ export const Navigation = styled.div`
   .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin-right: 30px; 
 
     li {
       a {

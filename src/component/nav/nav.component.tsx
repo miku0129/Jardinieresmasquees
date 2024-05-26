@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { AnchorLink } from "react-anchor-navigation";
+// import { AnchorLink } from "react-anchor-navigation";
 
 import { Navigation, Logo } from "./nav.styles";
 
@@ -18,12 +19,15 @@ const Nav = () => {
   return (
     <Navigation className={`${isNavshrunk ? "shrink" : ""}`}>
       <div className="logo-container">
-        <AnchorLink href="#accueil">
+        {/* <AnchorLink href="#accueil">
           <Logo className={`${isNavshrunk ? "shrink" : ""}`}></Logo>
-        </AnchorLink>
+        </AnchorLink> */}
+        <Link to="/">
+          <Logo className={`${isNavshrunk ? "shrink" : ""}`}></Logo>
+        </Link>
       </div>
       <ul className="menu">
-        <li>
+        {/* <li>
           <AnchorLink href="#accueil">Accueil</AnchorLink>
         </li>
         <li>
@@ -34,6 +38,12 @@ const Nav = () => {
         </li>
         <li>
           <AnchorLink href="#contact">Contact</AnchorLink>
+        </li> */}
+        <li>
+          <Link to="/">Accueil</Link>
+        </li>
+        <li>
+          <Link to="/gallery">Gallery</Link>
         </li>
       </ul>
     </Navigation>
