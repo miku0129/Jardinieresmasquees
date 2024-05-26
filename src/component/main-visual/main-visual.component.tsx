@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
-import { getPhotos } from "../../utils/data.utils";
+import { getPhotosForMainVisual } from "../../utils/data.utils";
 
 const MainVisual = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
     const pulltrigger = async () => {
-      const res = await getPhotos();
+      const res = await getPhotosForMainVisual();
       setPhotos(res);
     };
     pulltrigger();
