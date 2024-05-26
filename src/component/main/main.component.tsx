@@ -9,7 +9,7 @@ import ContentContact from "../content-contact/content-contact.component";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./main.styles.scss";
 
-import Gallery from "../gallery/gallery.component";
+import MainVisual from "../main-visual/main-visual.component";
 
 const Main = () => {
   return (
@@ -20,7 +20,7 @@ const Main = () => {
         <div className="contents-container">
           <AnchorSection id="propos" />
           <ContentIntroduction />
-          <Gallery />
+          <MainVisual />
           <AnchorSection id="infos" />
           <ArticlesPreview />
           <AnchorSection id="contact" />

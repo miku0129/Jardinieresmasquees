@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import { getPhotos } from "../../utils/data.utils";
 
-const Gallery = () => {
+const MainVisual = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default MainVisual;
