@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-// import { AnchorSection } from "react-anchor-navigation";
 
 import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
 import ContentHeader from "../content-header/content-header.compoment";
@@ -15,15 +14,11 @@ const Main = () => {
   return (
     <Fragment>
       <div className="main-container">
-        {/* <AnchorSection id="accueil" /> */}
         <ContentHeader />
         <div className="contents-container">
-          {/* <AnchorSection id="propos" /> */}
           <ContentIntroduction />
           <MainVisual />
-          {/* <AnchorSection id="infos" /> */}
           <ArticlesPreview />
-          {/* <AnchorSection id="contact" /> */}
           <ContentContact />
         </div>
       </div>
