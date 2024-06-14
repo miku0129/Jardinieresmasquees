@@ -75,7 +75,7 @@ export const Navigation = styled.div`
 
     .menu {
       padding-left: 0;
-      justify-content: space-around;
+      justify-content: right;
       
       li {
         text-align: center;
