@@ -9,6 +9,8 @@ This repository contains the TypeScript codebase of a website for "Jardinieresma
 - **Achieved scalable architecture:** by TypeScript + React 
 - **Obtains contents always up-to-date:** Assembled with Facebook API & Flickr API. 
 - **Appeal to the eye:** Enhance visuals with react-image-gallery and styled-component. 
+- **Deployment automation:** Integrate Github Actions for smoother development. 
+
 
 ## Demo
 
