@@ -17,7 +17,7 @@ export const getPhotosForGallery = async () => {
 
   const serverId = process.env.REACT_APP_FLICKR_SERVER_ID;
   const res = await flickr("flickr.photosets.getPhotos", {
-    photoset_id: process.env.REACT_APP_FLICKR_PHOTOSET_ID!,
+    photoset_id: process.env.REACT_APP_FLICKR_GALLERY_PHOTOSET_ID!,
     user_id: process.env.REACT_APP_FLICKR_USER_ID!,
   });
 
@@ -32,7 +32,7 @@ export const getPhotosForMainVisual = async () => {
 
   const serverId = process.env.REACT_APP_FLICKR_SERVER_ID;
   const res = await flickr("flickr.photosets.getPhotos", {
-    photoset_id: process.env.REACT_APP_FLICKR_PHOTOSET_ID!,
+    photoset_id: process.env.REACT_APP_FLICKR_MAINVISUAL_PHOTOSET_ID!,
     user_id: process.env.REACT_APP_FLICKR_USER_ID!,
   });
 
