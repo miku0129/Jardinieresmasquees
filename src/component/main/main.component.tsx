@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import { AnchorSection } from "react-anchor-navigation";
 
 import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
 import ContentHeader from "../content-header/content-header.compoment";
@@ -9,21 +8,17 @@ import ContentContact from "../content-contact/content-contact.component";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./main.styles.scss";
 
-import Gallery from "../gallery/gallery.component";
+import MainVisual from "../main-visual/main-visual.component";
 
 const Main = () => {
   return (
     <Fragment>
       <div className="main-container">
-        <AnchorSection id="accueil" />
         <ContentHeader />
         <div className="contents-container">
-          <AnchorSection id="propos" />
           <ContentIntroduction />
-          <Gallery />
-          <AnchorSection id="infos" />
+          <MainVisual />
           <ArticlesPreview />
-          <AnchorSection id="contact" />
           <ContentContact />
         </div>
       </div>
