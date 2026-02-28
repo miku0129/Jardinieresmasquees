@@ -13,12 +13,12 @@ type FlickrPhotoInfo = {
 };
 
 export const getPhotosForGallery = async () => {
-  const { flickr } = createFlickr(process.env.REACT_APP_FLICKR_API_KEY!);
+  const { flickr } = createFlickr(import.meta.env.VITE_FLICKR_API_KEY!);
 
-  const serverId = process.env.REACT_APP_FLICKR_SERVER_ID;
+  const serverId = import.meta.env.VITE_FLICKR_SERVER_ID;
   const res = await flickr("flickr.photosets.getPhotos", {
-    photoset_id: process.env.REACT_APP_FLICKR_GALLERY_PHOTOSET_ID!,
-    user_id: process.env.REACT_APP_FLICKR_USER_ID!,
+    photoset_id: import.meta.env.VITE_FLICKR_GALLERY_PHOTOSET_ID!,
+    user_id: import.meta.env.VITE_FLICKR_USER_ID!,
   });
 
   const photos = res.photoset.photo.map((item: FlickrPhotoInfo) => {
@@ -28,12 +28,12 @@ export const getPhotosForGallery = async () => {
 };
 
 export const getPhotosForMainVisual = async () => {
-  const { flickr } = createFlickr(process.env.REACT_APP_FLICKR_API_KEY!);
+  const { flickr } = createFlickr(import.meta.env.VITE_FLICKR_API_KEY!);
 
-  const serverId = process.env.REACT_APP_FLICKR_SERVER_ID;
+  const serverId = import.meta.env.VITE_FLICKR_SERVER_ID;
   const res = await flickr("flickr.photosets.getPhotos", {
-    photoset_id: process.env.REACT_APP_FLICKR_MAINVISUAL_PHOTOSET_ID!,
-    user_id: process.env.REACT_APP_FLICKR_USER_ID!,
+    photoset_id: import.meta.env.VITE_FLICKR_MAINVISUAL_PHOTOSET_ID!,
+    user_id: import.meta.env.VITE_FLICKR_USER_ID!,
   });
 
   const photos = res.photoset.photo.map((item: FlickrPhotoInfo) => {

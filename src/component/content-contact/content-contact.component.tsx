@@ -1,4 +1,4 @@
-import { ReactComponent as FacebookLogo } from "../../assesst/facebook-svgrepo-com.svg";
+import FacebookLogo from "../../assesst/facebook-svgrepo-com.svg?react";
 import { Logo, ContactContainer } from "./content-contact.styles";
 
 const ContentContact = () => {
