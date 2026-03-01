@@ -35,8 +35,6 @@ export const Navigation = styled.div`
   }
 
   &:hover {
-    background-color: white;
-
     .menu {
       li {
         a {
@@ -53,18 +51,7 @@ export const Navigation = styled.div`
   }
 
   &.shrink {
-    height: ${navShrinkHeight};
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: solid 1px gray;
-
-    .menu {
-      li {
-        a {
-          color: black;
-        }
-      }
-    }
+    visibility: hidden; 
   }
 
   @media (max-width: ${breakpointSmall}) {

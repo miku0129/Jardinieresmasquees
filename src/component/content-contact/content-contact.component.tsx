@@ -1,4 +1,4 @@
-import FacebookLogo from "../../assesst/facebook-svgrepo-com.svg?react";
+import FacebookLogo from "../../assets/facebook-svgrepo-com.svg?react";
 import { Logo, ContactContainer } from "./content-contact.styles";
 
 const ContentContact = () => {

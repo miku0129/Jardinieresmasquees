@@ -5,7 +5,7 @@ import ContentHeader from "../content-header/content-header.compoment";
 import ContentIntroduction from "../content-introduction/content-introduction.component";
 import ContentContact from "../content-contact/content-contact.component";
 
-import "react-image-gallery/styles/css/image-gallery.css";
+import "react-image-gallery/styles/image-gallery.css";
 import "./main.styles.scss";
 
 import MainVisual from "../main-visual/main-visual.component";
