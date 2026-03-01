@@ -27,6 +27,28 @@ export const getPhotosForGallery = async () => {
   return photos;
 };
 
+export const getPhotosForGalleryviewer = async () => {
+  const { flickr } = createFlickr(import.meta.env.VITE_FLICKR_API_KEY!);
+
+  const serverId = import.meta.env.VITE_FLICKR_SERVER_ID;
+  const res = await flickr("flickr.photosets.getPhotos", {
+    photoset_id: import.meta.env.VITE_FLICKR_GALLERY_PHOTOSET_ID!,
+    user_id: import.meta.env.VITE_FLICKR_USER_ID!,
+  });
+
+  const photos = res.photoset.photo.map((item: FlickrPhotoInfo) => {
+    const photoUrl = `https://live.staticflickr.com/${serverId}/${item.id}_${item.secret}.jpg`;
+    const obj = {
+      original: photoUrl,
+      thumbnail: photoUrl,
+      originalHeight: 500,
+      thumbnailHeight: 70,
+    };
+    return obj;
+  });
+  return photos;
+};
+
 export const getPhotosForMainVisual = async () => {
   const { flickr } = createFlickr(import.meta.env.VITE_FLICKR_API_KEY!);
 

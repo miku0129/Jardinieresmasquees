@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
@@ -20,7 +21,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="bg-goldenrod absolute top-0 left-0 w-dvw">
+    <div className="w-dvw">
       <div className="mt-32">
         <Box sx={{ width: "auto", overflowY: "scroll" }}>
           <ImageList
@@ -28,16 +29,18 @@ export default function Gallery() {
             style={{ columnCount: width < 450 ? "2" : "3" }}
             gap={8}
           >
-            {photos.map((photo) => {
+            {photos.map((photo: string, idx: number) => {
               return (
-                <ImageListItem key={photo}>
-                  <img
-                    srcSet={`${photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${photo}?w=248&fit=crop&auto=format`}
-                    alt={photo}
-                    loading="lazy"
-                  />
-                </ImageListItem>
+                <Link to={`/photoviewer/${idx}`} key={photo}>
+                  <ImageListItem>
+                    <img
+                      srcSet={`${photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      src={`${photo}?w=248&fit=crop&auto=format`}
+                      alt={photo}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                </Link>
               );
             })}
             ;
