@@ -4,15 +4,12 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-import { useWindowSize } from "../../utils/useWindowSize";
 import { getPhotosForGallery } from "../../utils/data.utils";
+import { useWindowSize } from "../../utils/useWindowSize";
 
-import "./gallery.component.scss";
-
-const Gallery = () => {
+export default function Gallery() {
   const [photos, setPhotos] = useState([]);
-  const [width, height] = useWindowSize();
-  console.log("to avoid eslint issue: ", height);
+  const [width, _] = useWindowSize();
 
   useEffect(() => {
     const pulltrigger = async () => {
@@ -22,50 +19,31 @@ const Gallery = () => {
     pulltrigger();
   }, []);
 
-  const imageItem = () => {
-    return photos.map((photo) => {
-      return (
-        <ImageListItem key={photo}>
-          <img
-            srcSet={`${photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            src={`${photo}?w=248&fit=crop&auto=format`}
-            alt={photo}
-            loading="lazy"
-          />
-        </ImageListItem>
-      );
-    });
-  };
-
-  const handleStyleOfImageList = () => {
-    if (width < 450) {
-      return (
-        <>
-          <ImageList variant="masonry" style={{ columnCount: "2" }} gap={8}>
-            {imageItem()}
-          </ImageList>
-        </>
-      );
-    } else {
-      return (
-        <>
-          <ImageList variant="masonry" style={{ columnCount: "3" }} gap={8}>
-            {imageItem()}
-          </ImageList>
-        </>
-      );
-    }
-  };
-
   return (
-    <div className="gallery">
-      <div className="gallery-container">
+    <div className="bg-goldenrod absolute top-0 left-0 w-dvw">
+      <div className="mt-32">
         <Box sx={{ width: "auto", overflowY: "scroll" }}>
-          {handleStyleOfImageList()}
+          <ImageList
+            variant="masonry"
+            style={{ columnCount: width < 450 ? "2" : "3" }}
+            gap={8}
+          >
+            {photos.map((photo) => {
+              return (
+                <ImageListItem key={photo}>
+                  <img
+                    srcSet={`${photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    src={`${photo}?w=248&fit=crop&auto=format`}
+                    alt={photo}
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              );
+            })}
+            ;
+          </ImageList>
         </Box>
       </div>
     </div>
   );
-};
-
-export default Gallery;
+}
