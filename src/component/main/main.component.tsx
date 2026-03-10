@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import ArticlesPreview from "../../route/articles-preview/articles-preview.component";
-import ContentHeader from "../content-header/content-header.compoment";
+import ContentHeader from "../content-header.compoment";
 import ContentIntroduction from "../content-introduction/content-introduction.component";
 import ContentContact from "../content-contact/content-contact.component";
 
