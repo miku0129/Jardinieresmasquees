@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
+import Gallery from "./component/gallery.component";
+import PhotoViewer from "./component/photo-viewer.component";
 import BasicLayout from "./route/basic-layout/basic-layout";
 import Home from "./route/home/home.route";
-import Gallery from "./component/gallery/gallery.component";
-import PhotoViewer from "./component/photo-viewer.component";
 
 function App() {
   return (

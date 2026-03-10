@@ -28,7 +28,7 @@ export const Navigation = styled.div`
 
     li {
       a {
-        color: white;
+        color: black;
         text-decoration: none;
       }
     }

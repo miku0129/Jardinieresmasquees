@@ -5,8 +5,8 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-import { getPhotosForGallery } from "../../utils/data.utils";
-import { useWindowSize } from "../../utils/useWindowSize";
+import { getPhotosForGallery } from "../utils/data.utils";
+import { useWindowSize } from "../utils/useWindowSize";
 
 export default function Gallery() {
   const [photos, setPhotos] = useState([]);
@@ -43,7 +43,6 @@ export default function Gallery() {
                 </Link>
               );
             })}
-            ;
           </ImageList>
         </Box>
       </div>
