@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { initFacebookSdk } from "./utils/facebook.utils";
 
-import "./index.css";
+import "./global.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
