@@ -19,7 +19,7 @@ export default function PhotoViewer() {
   }, []);
 
   return (
-    <div className="mt-32 overflow-auto">
+    <div className="mt-content-top mx-1 overflow-auto ">
       <ImageGallery
         items={photos}
         showNav={true}
@@ -29,6 +29,7 @@ export default function PhotoViewer() {
         showPlayButton={false}
         showBullets={true}
         startIndex={photoIndex}
+        lazyLoad={true}
       />
     </div>
   );
