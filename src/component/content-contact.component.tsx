@@ -1,5 +1,4 @@
-import FacebookLogo from "../../assets/facebook-svgrepo-com.svg?react";
-import { Logo } from "./content-contact.styles";
+import FacebookLogo from "../assets/facebook-svgrepo-com.svg?react";
 
 export default function ContentContact() {
   return (
@@ -13,7 +12,7 @@ export default function ContentContact() {
         </p>
       </section>
       <div className="flex items-end gap-1 place-self-center-safe">
-        <Logo />
+        <div className="h-20 w-20 rounded-full bg-[url('https://i.ibb.co/51sbQ5G/Screenshot-2023-08-20-143312.jpg')] bg-cover bg-center" />
         <a
           href="https://www.facebook.com/jardinieresmasquees"
           target="_blank"

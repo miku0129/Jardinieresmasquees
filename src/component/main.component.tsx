@@ -1,5 +1,5 @@
 import ArticlesPreview from "../route/articles-preview.component";
-import ContentContact from "./content-contact/content-contact.component";
+import ContentContact from "./content-contact.component";
 import ContentHeader from "./content-header.compoment";
 import ContentIntroduction from "./content-introduction.component";
 import MainVisual from "./main-visual.component";

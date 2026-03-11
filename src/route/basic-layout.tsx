@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import Footer from "../component/footer/footer.component";
+import Footer from "../component/footer.component";
 import Nav from "../component/nav.component";
 
 export default function BasicLayout() {
