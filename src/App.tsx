@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Gallery from "./component/gallery.component";
 import PhotoViewer from "./component/photo-viewer.component";
 import BasicLayout from "./route/basic-layout";
-import Home from "./route/home/home.route";
+import Home from "./route/home.route";
 
 export default function App() {
   return (
