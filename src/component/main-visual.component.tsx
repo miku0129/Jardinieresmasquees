@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
-import { getPhotosForMainVisual } from "../../utils/data.utils";
+import { getPhotosForMainVisual } from "../utils/data.utils";
 
 const MainVisual = () => {
   const [photos, setPhotos] = useState([]);
@@ -14,7 +14,7 @@ const MainVisual = () => {
   }, []);
 
   return (
-    <div className="image-gallery-container">
+    <div className="px-5 md:px-0">
       <ImageGallery
         items={photos}
         showNav={true}
